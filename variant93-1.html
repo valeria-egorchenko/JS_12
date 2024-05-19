@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>variant93-1</title>
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("button").click(function () {
+        var p = $("p");
+        p.eq(2).animate({ right: '100px' }, "slow");
+        p.eq(4).animate({ right: '100px' }, "slow");        
+      });
+      $("img").click(function () {
+        $(this).animate({ top: '30px' }, "slow");        
+      });
+    });
+  </script>
+  <style type="text/css">
+    p {
+      padding: 5px;
+      text-align: center;
+      background-color: #dee7c6;
+      border: solid 1px #c3c3c3;
+      position: relative;
+      width: 900px;
+      margin-left: 300px;
+    }
+    img {
+      position: relative;
+      height: 130px;
+      margin-left: 700px;
+      cursor: pointer;
+    }
+    button {
+      background-color: #e5eecc;
+      transition: 0.5s all ease;
+      cursor: pointer;
+      font-weight: bold;
+      border: 1px solid #bbbbbb;
+      padding: 5px;
+    }
+    button:hover{
+      background-color: rgb(222, 212, 71);
+      border: 1px solid rgb(148, 141, 48);
+    }
+  </style>
+</head>
+<body>
+  <button>Запустить aнимацию!</button>
+  <p><b>1.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+
+  <img src="./img/1.png" alt="1">
+
+  <p><b>2.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+
+  <img src="./img/2.png" alt="2">
+
+  <p><b>3.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+
+  <img src="./img/3.png" alt="3">
+
+  <p><b>4.</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+
+  <img src="./img/4.png" alt="4">
+
+  <p><b>5.</b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum ut tristique et.</p>
+</body>
+</html>

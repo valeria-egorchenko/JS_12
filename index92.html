@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>index92</title>
+  <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#btn1").click(function () {
+        alert(`Text: ${$("#test").text()}`);
+      });
+      $("#btn2").click(function () {
+        alert(`HTML: ${$("#test").html()}`);
+      });
+      $("#btn3").click(function () {
+        alert(`Value: ${$("#test1").val()}`);
+      });
+    });
+  </script>
+</head>
+<body>
+  <p id="test">Это некоторый <b>полужирный</b> текст в абзаце.</p>
+  <button id="btn1">Показать Текст</button>
+  <button id="btn2">Показать HTML</button>
+  <br>
+  <p>Name: <input type="text" id="test1" value="ФИО сотрудника"></p>
+  <button id="btn3">Показать значение поля ввода Формы</button>
+</body>
+</html>
